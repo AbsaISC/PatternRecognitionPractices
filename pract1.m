@@ -20,4 +20,8 @@ classes2= cat(3,c12,c22,c32,c42,c44);
 vector1= [ 5 4 ];
 vector2= [ 6 3 2];
 
-minimumDistanceCriterion(classes2, vector2);
+[posWinner1 result1 ]=minimumDistanceCriterion(classes1, vector1,true)
+
+[posWinner2 result2]= mahalanobisDistanceCriterion(classes1,vector1,false)
+
+[posWinner3 result3]=probabilityMaxCriterion( classes1, vector1, false )

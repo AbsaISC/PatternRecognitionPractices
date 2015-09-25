@@ -260,7 +260,8 @@ function mahalanobisDistanceCriterion(hObject, handles, vector)
     for j=1:size(matrix0,2)
       matrix1(:,j,i)=matrix0(:,j,i)-means(:,i);
     end
-    matrixS(:,:,i)  =matrix1(:,:,i) * matrix1(:,:,i)';
+    numElem=size(matrix0,1)
+    matrixS(:,:,i)  =(1/size(matrix0,1))*(matrix1(:,:,i) * matrix1(:,:,i)');
     results(i)=((vector-means(:,i)')*matrixS(:,:,i))*(vector-means(:,i)')';
   end
   
