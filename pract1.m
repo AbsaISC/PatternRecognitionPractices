@@ -3,6 +3,27 @@ close all
 clear all
 warning off all
 
+numClass = input('# de clases: ');
+representantes = input('# de reperesentantes p/c clase: ');
+%dim=input('dimension de vector: ')
+cordV=[];
+disperV=[];
+for i=1:numClass
+	vector=input(['vector de la clase #',num2str(i),' (ejem: "[X Y]" ): ']);
+	disper=input('introduce la dispersión: ');
+	if i==1
+		disperV=disper;
+		cordV=vector';
+	else
+		cordV=[cordV vector'];
+		disperV=[disperV disper];
+	end
+end
+
+
+
+
+return
 c1 = [0 1 0 1 2; 0 1 1 0 0];
 c2 = [4 4 4 5 5; 1 2 4 2 4];
 c3 = [1 2 1 2 2; 4 4 5 5 6];
