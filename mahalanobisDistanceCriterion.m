@@ -37,7 +37,7 @@ function [posWinner, result]  =  mahalanobisDistanceCriterion( classes, vector ,
   	matricesVC = getMatricesVC( classes , means );
   	
   	for i=1:size(matricesVC,3)
-  		mhlDist(i)=((vector-means(:,i)')*matricesVC(:,:,i))*(vector-means(:,i)')';
+  		mhlDist(i)=((vector-means(:,i)')*inv(matricesVC(:,:,i)))*(vector-means(:,i)')';
   	end
 
   	belong=1;

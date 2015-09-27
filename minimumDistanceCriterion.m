@@ -28,7 +28,7 @@ function [posWinner,result]=minimumDistanceCriterion( classes, vector, isplot )
 	hold on
 	grid on
 	means=getMeans(classes);
-	
+
 	if isplot
 		plotClasses(classes, vector,means);
 	end
@@ -46,7 +46,9 @@ function [posWinner,result]=minimumDistanceCriterion( classes, vector, isplot )
   	end
   	result=distance;
   	posWinner=belong;
-  	msgbox(['The vector belongs at class ', num2str(belong)],'Result');
+  	if isplot
+  		msgbox(['The vector belongs at class ', num2str(belong)],'Result');
+  	end
   	return;
 end
 
