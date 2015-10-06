@@ -75,11 +75,11 @@ while  adelante
 			vectCell = inputdlg(prompt2,dlg_title2,num_lines2);
 			vector=str2num(vectCell{:});
 		case 5
-            string='';
             for xsd=1:size(ch,2)
-                string=strcat(string,['clase',num2str(xsd),' resultado: ', num2str(ch(xsd)),'\n ']);
+                string='';
+                string=strcat(string,['clase',num2str(xsd),' resp']);
             end
-			msgbox(string,'Result');
+			msgbox(double2str(ch),'Result');
 		case 6
 			adelante=false;
 	end
