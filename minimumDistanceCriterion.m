@@ -24,7 +24,7 @@ function [posWinner,result]=minimumDistanceCriterion( classes, vector, isplot )
 	end
 
 %--------------------------------------------------------------------------------
-	figure(1);
+	% figure(1);
 	hold on
 	grid on
 	means=getMeans(classes);
@@ -40,9 +40,13 @@ function [posWinner,result]=minimumDistanceCriterion( classes, vector, isplot )
 	belong=1;
 	size(distance,2)
 	for i=1:size(distance,2)
+		if(distance(i)>50)
+			msgbox(['No se puedo clasificar en ', num2str(i)],'Result');
+		else
       if distance(belong) > distance(i)
         belong=i;
       end
+  end
   	end
   	result=distance;
   	posWinner=belong;

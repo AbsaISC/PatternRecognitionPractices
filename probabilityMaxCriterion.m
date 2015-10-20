@@ -3,6 +3,7 @@ function [ posWinner, result ] = probabilityMaxCriterion( classes, vector, isplo
 %   Detailed explanation goes here
 means=getMeans(classes); 
 matricesVC = getMatricesVC( classes , means );
+disp(matricesVC);
 [pos resp]= mahalanobisDistanceCriterion( classes, vector , false);
 	figure(3);
 	hold on
