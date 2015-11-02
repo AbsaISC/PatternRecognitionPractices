@@ -24,7 +24,7 @@ function [posWinner, result]  =  mahalanobisDistanceCriterion( classes, vector ,
 	end
 
 %--------------------------------------------------------------------------------
-	figure(2);
+	figure
 	hold on
 	grid on
 	means=getMeans(classes);

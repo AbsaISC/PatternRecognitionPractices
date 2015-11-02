@@ -4,7 +4,7 @@ function [ posWinner, result ] = probabilityMaxCriterion( classes, vector, isplo
 means=getMeans(classes); 
 matricesVC = getMatricesVC( classes , means );
 [pos resp]= mahalanobisDistanceCriterion( classes, vector , false);
-	figure(3);
+	figure
 	hold on
 	grid on
 	if isplot

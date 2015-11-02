@@ -1,5 +1,5 @@
-function [posWinner,result]=minimumDistanceCriterion( classes, vector, isplot )
-	% classes debe tener un tamaño (m x n x l)
+function [ posWinner, result ] = KNN( classes, vector, isplot )
+% classes debe tener un tamaño (m x n x l)
 	% m: dimension del vector
 	% n: número de integrantes
 	% l: número de clases

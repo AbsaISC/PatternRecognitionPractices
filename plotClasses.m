@@ -1,9 +1,10 @@
-function plotClasses( classes , vector, means)
+function plotClassse( classes , vector, means)
 %------------------------------------------------------------------------------
 	%		grafia las clases si las dimensiones son 2 o 3
 	%figure(1);
 	hold on
 	grid on
+	tamvect=size(vector)
 	if size(vector,2)==2
         % msgbox('grafiga 2d')
         vleg=[];
