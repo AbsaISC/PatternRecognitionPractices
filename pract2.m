@@ -99,7 +99,7 @@ while  adelante
         case 3
             [sh ch]=probabilityMaxCriterion( pixelsXclass, pixel, true );
         case 4
-            % [sh ch]=knn( pixelsXclass, pixel, true );
+            [sh ch]=KNN( pixelsXclass, pixel, true );
         case 5
             close all
             imshow(img);
@@ -125,5 +125,5 @@ while  adelante
         case 7
             adelante=false;
     end
-    clc
+    % clc
 end

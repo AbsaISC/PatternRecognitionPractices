@@ -14,7 +14,7 @@ function [resFinal colors symbols] = randColorAndType(colors, symbols)
            %                     h     hexagram
 %rng(0,'twister');
 if(isempty(colors))
-  colors=[ 'b', 'g', 'r','c','m','y','k'];
+  colors=[ 'b', 'g','c','m','y','k'];
 end
 tamc=size(colors,2);
 color = randi([1 tamc],1,1);
