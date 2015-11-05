@@ -3,7 +3,7 @@ close all
 clear all
 warning off all
 
-img=imread('lago.jpg');
+img=imread('peppers.png');
 imgsize=size(img);%1 es num de filas y 2 num de columnas
 
 % Se pide el numero de clases y cantidad de individuos
@@ -125,5 +125,5 @@ while  adelante
         case 7
             adelante=false;
     end
-    % clc
+    clc
 end

@@ -81,7 +81,7 @@ function [ posWinner, result ] = KNN( classes, vector, isplot )
 	% size(result)
 	% size(result,1)
 	% size(result,2)
-	result
+	% result
 	for i=1:size(result,2)
       if result(belong) < result(i)
         belong=i;
