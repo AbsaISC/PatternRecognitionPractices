@@ -25,7 +25,7 @@ function plotClassse( classes , vector, means)
 			%plot(x,y)
 			%vleg=cat(1, vleg, ['linea #',num2str(classs)]);
 		end
-		plot(vector(1), vector(2), 'rh', 'MarkerSize', 20, 'LineWidth',5)
+		%plot(vector(1), vector(2), 'rh', 'MarkerSize', 20, 'LineWidth',5)
 		legend(vleg)
 	end
 

@@ -2,6 +2,7 @@ function pertenece_Promedio(vectores_distanciaCaso3, elementosPorClase, numClase
 vectorPreeliminarCaso3 = [];
 contadorClase = 1;
 contadorAux = 0;
+vectores_distanciaCaso3
 for j=1: size(vectores_distanciaCaso3,1) %vamos a recorrer todos los vectores horizontalmente para evaluar a que clase pertenecen
 	%j
     belong=1;
@@ -23,7 +24,7 @@ for j=1: size(vectores_distanciaCaso3,1) %vamos a recorrer todos los vectores ho
      %vectorPreeliminarCaso2;
      %disp('----------------- termina vuelta ')
 end
-vectorPreeliminarCaso3;
+vectorPreeliminarCaso3
 vectorClasesPorcetajesCaso3 = [];
 %elementosPorClase = size(vectorPreeliminarCaso3,1)/D(3);
 %D(1) - te da la dimension
